@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #07575b;
+  --secondary-color: #ffffff;
+  --accent-color: #66a5ad;
+  --hover-color: #a2d5c6;
+  --text-color: #333333;
+  --heading-color: #07575b;
+}
+
+/* Base styles */
+body {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* Buttons */
+button, 
+.button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Borders and accents */
+.accent-border {
+  border-color: var(--accent-color);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+} 

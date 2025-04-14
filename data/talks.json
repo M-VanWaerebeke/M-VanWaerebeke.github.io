@@ -1,0 +1,81 @@
+{
+  "talks": [
+    {
+      "title": "Research teaser for 'When to Forget?'",
+      "venue": "FedMalin Retreat",
+      "date": "26 Nov 2024",
+      "location": "Lyon, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "Current Research in Machine Unlearning",
+      "venue": "Redeem Retreat",
+      "date": "10 Sept 2024",
+      "location": "Grenoble, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "SIFU: Sequential Informed Federated Unlearning",
+      "venue": "Redeem Scientific Day",
+      "date": "21 March 2024",
+      "location": "Paris, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "SIFU: Sequential Informed Federated Unlearning",
+      "venue": "ARGO Team Seminar",
+      "date": "4 March 2024",
+      "location": "Paris, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "SIFU: Sequential Informed Federated Unlearning",
+      "venue": "FedMalin Retreat",
+      "date": "28 Nov 2023",
+      "location": "Sophia-Antipolis, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "SIFU: Sequential Informed Federated Unlearning",
+      "venue": "EPIONE team seminar",
+      "date": "27 Oct 2023",
+      "location": "Sophia-Antipolis, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "Introduction to Machine Unlearning Research",
+      "venue": "FedMalin Seminar",
+      "date": "10 July 2023",
+      "location": "Sophia-Antipolis, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    }
+  ]
+} 

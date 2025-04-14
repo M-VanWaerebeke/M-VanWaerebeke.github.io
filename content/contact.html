@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Martin Van Waerebeke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  <script type="text/javascript" src="/static/components.js"></script>
+  <script type="text/javascript" src="/static/script.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main>
+    <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        
+        <div class="contact-info">
+          <p>I'm always interested in discussing research opportunities, collaborations, or answering questions about my work.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h2>Email</h2>
+              <p>You can reach me at:</p>
+              <button onclick="copyEmail()" class="button email-button">Copy Email</button>
+            </div>
+
+            <div class="contact-method">
+              <h2>Office</h2>
+              <p>INRIA Paris<br>
+              48 Rue Barrault<br>
+              75013 Paris, France</p>
+            </div>
+
+            <div class="contact-method">
+              <h2>Other websites</h2>
+              <div class="social-links">
+                <a href="https://scholar.google.com/citations?user=z_x087wAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/martin-van-waerebeke/" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer-component></footer-component>
+
+  <script>
+    function copyEmail() {
+      const user = 'martin.van-waerebeke';
+      const domain = 'inria.fr';
+      const email = user + '@' + domain;
+      navigator.clipboard.writeText(email).then(() => {
+        const button = document.querySelector('.email-button');
+        const originalText = button.textContent;
+        button.textContent = 'Email Copied!';
+        setTimeout(() => button.textContent = originalText, 2000);
+      }).catch((error) => {
+        alert('Failed to copy email: ' + error);
+      });
+    }
+  </script>
+</body>
+</html>

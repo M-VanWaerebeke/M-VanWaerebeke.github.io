@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Publications - Martin Van Waerebeke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" type="text/css" href="/static/publication-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="/static/components.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main>
+    <section id="publications">
+      <div class="container">
+        <h1>Publications</h1>
+        
+        <div class="publications-list" id="publications-list">
+          <!-- Publications will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer-component></footer-component>
+
+  <script>
+    // Function to load and display publications
+    async function loadPublications() {
+      try {
+        const response = await fetch('/data/publications.json');
+        const data = await response.json();
+        const publicationsList = document.getElementById('publications-list');
+        
+        data.publications.forEach(pub => {
+          const pubElement = document.createElement('div');
+          pubElement.className = 'publication-item';
+          pubElement.innerHTML = `
+            <h2>${pub.title}</h2>
+            <p class="authors">${pub.authors}</p>
+            <p class="venue">${pub.venue}, ${pub.year}</p>
+            <div class="publication-links">
+              ${pub.links.pdf ? `<a href="${pub.links.pdf}" class="button">PDF</a>` : ''}
+              ${pub.links.code && pub.links.code !== '#' ? `<a href="${pub.links.code}" class="button">Code</a>` : ''}
+            </div>
+            <div class="abstract">
+              <p>${pub.abstract}</p>
+            </div>
+          `;
+          publicationsList.appendChild(pubElement);
+        });
+      } catch (error) {
+        console.error('Error loading publications:', error);
+        document.getElementById('publications-list').innerHTML = 
+          '<p>Error loading publications. Please try again later.</p>';
+      }
+    }
+
+    // Load publications when the page loads
+    document.addEventListener('DOMContentLoaded', loadPublications);
+  </script>
+</body>
+</html> 

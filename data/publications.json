@@ -1,0 +1,52 @@
+{
+  "publications": [
+    {
+      "title": "When to Forget? Complexity Trade-offs in Machine Unlearning",
+      "authors": "Martin Van Waerebeke, Marco Lorenzi, Giovanni Neglia, Kevin Scaman",
+      "venue": "arXiv preprint arXiv:2502.17323",
+      "short venue": "arXiv (submitted to ICML)",
+      "year": "2025",
+      "abstract": "Can unlearning be done efficiently? Sometimes! We identify three efficiency regimes for first-order unlearning algorithms, analyzing how their speeds compare to retraining depending on the fraction of data to forget, privacy constraints, and allowed errors.",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2502.17323",
+        "code": "#"
+      }
+    },
+    {
+      "title": "SIFU: Sequential Informed Federated Unlearning for efficient and provable client unlearning in federated optimization",
+      "authors": "Yann Fraboni*, Martin Van Waerebeke*, Kevin Scaman, Richard Vidal, Laetitia Kameni, Marco Lorenzi",
+      "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+      "short venue": "AISTATS",
+      "year": "2024",
+      "abstract": "We propose an algorithm for provable unlearning in federated learning, using differential privacy-based guarantees. The algorithm can deal with non-convex loss functions and has improved performances for convex and strongly convex losses.",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2211.11656",
+        "code": "https://github.com/Accenture/Labs-Federated-Learning/tree/SIFU"
+      }
+    },
+    {
+      "title": "A primal–dual data-driven method for computational optical imaging with a photonic lantern",
+      "authors": "C Santos Garcia, M Larchevêque, S O'Sullivan, M Van Waerebeke, Jean-Christophe Pesque and Audrey Repetti.",
+      "venue": "PNAS nexus",
+      "short venue": "PNAS nexus",
+      "year": "2024",
+      "abstract": "Primal-dual approaches can be used to solve inverse imaging problems when there is a known prior. We replace the usual simple priors (i.e. prox on the L1 loss) with denoising neural networks and achieve improved results.",
+      "links": {
+        "pdf": "https://academic.oup.com/pnasnexus/article/3/4/pgae164/7652001",
+        "code": "https://github.com/carlossantosgarcia/PnP_Lantern"
+      }
+    },
+    {
+      "title": "On the pitfalls of entropy-based uncertainty for multi-class semi-supervised segmentation",
+      "authors": "Martin Van Waerebeke, Gregory Lodygensky, Jose Dolz",
+      "venue": "International Workshop on Uncertainty for Safe Utilization of Machine Learning in Medical Imaging",
+      "short venue": "MICCAI (Workshop)",
+      "year": "2022",
+      "abstract": "Entropy of predictions over several perturbed inferences is a popular uncertainty measure for self-supervised segmentation. We show that is has important flaws in multi-class settings and propose better-performing alternatives.",
+      "links": {
+        "pdf": "https://arxiv.org/pdf/2203.03587v1",
+        "code": "#"
+      }
+    }
+  ]
+} 

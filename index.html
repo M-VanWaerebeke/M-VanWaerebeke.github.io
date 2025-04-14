@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Martin Van Waerebeke - PhD Candidate in Machine Unlearning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  <script type="text/javascript" src="/static/components.js"></script>
+  <script type="text/javascript" src="/static/script.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="section-column">
+          <img src="/images/profile.jpg" alt="Cool pic of me." class="profile-image">
+        </div>
+        <div class="section-column">
+          <h1>Martin Van Waerebeke</h1>
+          <h2>PhD Candidate in Machine (Un)Learning</h2>
+          <p>I am a PhD candidate specializing in <strong>Machine Unlearning</strong>, working in the <a href="https://www.di.ens.fr/argo/content/team.html" target="_blank"> ARGO team</a> at INRIA Paris. I am especially interested in the theoretical possibilities and limitations of machine unlearning. I am supervised by <a href="https://kscaman.github.io/" target="_blank">Kevin Scaman</a>, and co-supervised by <a href="https://marcolorenzi.github.io/" target="_blank">Marco Lorenzi</a> and <a href="https://www-sop.inria.fr/members/Giovanni.Neglia/" target="_blank">Giovanni Neglia</a>.</p>
+
+          <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=z_x087wAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/martin-van-waerebeke/" target="_blank">LinkedIn</a>
+
+            <button class="button email-button" onclick="copyEmail()">Copy Email</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="two-column-layout">
+      <div class="column">
+        <section id="recent-publications">
+          <div class="container">
+            <h2>Recent Publications</h2>
+            <div class="publications-list" id="recent-publications-list">
+              <!-- Recent publications will be loaded here by JavaScript -->
+            </div>
+            <div class="view-more">
+              <a href="/content/publications.html" class="button">View All Publications</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="recent-talks">
+          <div class="container">
+            <h2>Recent Talks</h2>
+            <div class="talks-list" id="recent-talks-list">
+              <!-- Recent talks will be loaded here by JavaScript -->
+            </div>
+            <div class="view-more">
+              <a href="/content/talks.html" class="button">View All Talks</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="column">
+        <section id="popular-science">
+          <div class="container">
+            <h2>Popular Science</h2>
+            <div class="article-list">
+              <div class="article-item">
+                <h3><a href="https://theconversation.com/apprendre-a-oublier-le-nouveau-defi-de-lintelligence-artificielle-237579" target="_blank">Apprendre à oublier : le nouveau défi de l'intelligence artificielle</a></h3>
+                <p class="venue">The Conversation, Sep 2024</p>
+                <p>A broad-public introduction to machine unlearning and its key concepts, co-authored with Marco Lorenzi.</p>
+              </div>
+              <div class="article-item">
+                <h3><a href="https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/quand-les-algorithmes-doivent-desapprendre_183596" target="_blank">Quand les algorithmes doivent désapprendre</a></h3>
+                <p class="venue">Sciences et Avenir, Feb 2025</p>
+                <p>An introduction to machine unlearning and its key role in the context of data privacy and AI ethics where I was interviewed by Arnaud Devillard.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="teaching">
+          <div class="container">
+            <h2>Teaching</h2>
+            <div class="teaching-list">
+              <div class="teaching-item">
+                <h3>Fundamentals of Probability and Statistics for Machine Learning (2x25h, Class + Exercise sessions)</h3>
+                <p class="venue">Datascience Tech Institute, Master's course</p>
+                <p class="details">Master's course, 2023-present</p>
+              </div>
+              <div class="teaching-item">
+                <h3>Mentor</h3>
+                <p class="venue"><a href="https://entraidescolaireamicale.org/" target="_blank">Entraide Scolaire Amicale</a></p>
+                <p class="details">Voluntary work, 2024-present</p>
+              </div>
+              <div class="teaching-item">
+                <h3>Mathematics Oral Examiner (Colleur)</h3>
+                <p class="venue">Fénelon Sainte-Marie</p>
+                <p class="details">Undergraduate level, 2021-2022</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-summary">
+          <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+              <p>I'm always interested in discussing research opportunities, collaborations, or answering questions about my work in Machine Unlearning.</p>
+            </div>
+            <div class="view-more">
+              <a href="/content/contact.html" class="button">View Full Contact Info</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer-component></footer-component>
+
+  <script>
+  function copyEmail() {
+    const user = 'martin.van-waerebeke';
+    const domain = 'inria.fr';
+    const email = user + '@' + domain;
+    navigator.clipboard.writeText(email).then(() => {
+      const button = document.querySelector('.email-button');
+      const originalText = button.textContent;
+      button.textContent = 'Email Copied!';
+      setTimeout(() => button.textContent = originalText, 2000);
+    }).catch((error) => {
+      alert('Failed to copy email: ' + error);
+    });
+  }
+
+    // Function to load and display recent publications
+    async function loadRecentPublications() {
+      try {
+        const response = await fetch('/data/publications.json');
+        const data = await response.json();
+        const publicationsList = document.getElementById('recent-publications-list');
+        
+        // Get only the 3 most recent publications
+        const recentPubs = data.publications.slice(0, 3);
+        
+        recentPubs.forEach(pub => {
+          const pubElement = document.createElement('div');
+          pubElement.className = 'publication-item';
+          pubElement.innerHTML = `
+            <h3><a href="${pub.links.pdf}" target="_blank">${pub.title}</a></h3>
+            <p class="venue">${pub["short venue"]} ${pub.year}</p>
+          `;
+          publicationsList.appendChild(pubElement);
+        });
+      } catch (error) {
+        console.error('Error loading publications:', error);
+        document.getElementById('recent-publications-list').innerHTML = 
+          '<p>Error loading publications. Please try again later.</p>';
+      }
+    }
+
+    // Function to load and display recent talks
+    async function loadRecentTalks() {
+      try {
+        const response = await fetch('/data/talks.json');
+        const data = await response.json();
+        const talksList = document.getElementById('recent-talks-list');
+        
+        // Get only the 3 most recent talks
+        const recentTalks = data.talks.slice(0, 3);
+        
+        recentTalks.forEach(talk => {
+          const talkElement = document.createElement('div');
+          talkElement.className = 'talk-item';
+          talkElement.innerHTML = `
+            <h3>${talk.title}</h3>
+            <p class="venue">${talk.venue}, ${talk.date}</p>
+          `;
+          talksList.appendChild(talkElement);
+        });
+      } catch (error) {
+        console.error('Error loading talks:', error);
+        document.getElementById('recent-talks-list').innerHTML = 
+          '<p>Error loading talks. Please try again later.</p>';
+      }
+    }
+
+    // Load recent publications and talks when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      loadRecentPublications();
+      loadRecentTalks();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Talks - Martin Van Waerebeke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="/static/components.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main>
+    <section id="talks">
+      <div class="container">
+        <h1>Talks and Presentations</h1>
+        
+        <div class="talks-list" id="talks-list">
+          <!-- Talks will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer-component></footer-component>
+
+  <script>
+    async function loadTalks() {
+      try {
+        const response = await fetch('/data/talks.json');
+        const data = await response.json();
+        const talksList = document.getElementById('talks-list');
+        
+        data.talks.forEach(talk => {
+          const talkElement = document.createElement('div');
+          talkElement.className = 'talk-item';
+          talkElement.innerHTML = `
+            <h2>${talk.venue}</h2>
+            <div class="talk-meta">
+              <span class="title">${talk.title}</span>
+              <span class="date">${talk.date}</span>
+              <span class="location">${talk.location}</span>
+            </div>
+            <div class="talk-links">
+              ${talk.links.slides !== '#' ? `<a href="${talk.links.slides}" class="button">Slides</a>` : ''}
+              ${talk.links.video !== '#' ? `<a href="${talk.links.video}" class="button">Video</a>` : ''}
+            </div>
+          `;
+          talksList.appendChild(talkElement);
+        });
+      } catch (error) {
+        console.error('Error loading talks:', error);
+        document.getElementById('talks-list').innerHTML = 
+          '<p>Error loading talks. Please try again later.</p>';
+      }
+    }
+
+    // Load talks when the page loads
+    document.addEventListener('DOMContentLoaded', loadTalks);
+  </script>
+</body>
+</html> 

@@ -1,0 +1,59 @@
+/*Titre*/
+div.ZoneTitreResultat
+{
+	display:none;
+}
+/* classes pour les rubriques pour certains type de classement (type de publi, annÃ©e de publi) */ 
+.Rubrique{
+  color: var(--text-color);
+	border-bottom: 2px solid var(--primary-color);
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+.SousRubrique{
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+/*nom du champ*/
+.ChampRes {
+	display:none;
+}
+
+/* classe commune Ã  tous les champs affichÃ©s */ 
+.ValeurRes {
+	color:var(--text-color);
+  margin-left:1em;
+}
+/* classe pour les titres */ 
+.Titre, .Titre a {
+  font-weight:bold;
+	color: var(--accent-color);
+}
+/* classe pour les auteurs */ 
+.Auteurs {
+}
+/* classe des dÃ©tails de publication : une calsse par type */ 
+.detail_revue,.detail_conf,.detail_cours,.detail_ouv,.detail_hdr,.detail_these,.detail_autre,.detail_brevet,.detail_rapport,.detail_sans_ref{
+}
+/* classe pour les rÃ©sumÃ©s */ 
+.Debut_du_resume{
+}
+/* classe pour les doi */ 
+.DOI{
+}
+/* classe pour les identifiants */ 
+.Identifiant{
+}
+/* classe pour les rubriques pour certains type de classement (type de publi, annÃ©e de publi) */ 
+.Rubrique{
+}
+.NoticeRes {
+	border-bottom: 0px;
+}
+.NoticeResAvecVignette {
+	border-bottom: 0px;
+}
