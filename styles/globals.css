@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #07575b;
-  --secondary-color: #ffffff;
-  --accent-color: #66a5ad;
-  --hover-color: #a2d5c6;
-  --text-color: #333333;
-  --heading-color: #07575b;
+  --primary-color: #00a7a7;      /* Bright teal/turquoise for freshness */
+  --secondary-color: #ffffff;    /* Pure white for clarity */
+  --accent-color: #ffb347;       /* Warm, vibrant orange-yellow for energy and joy */
+  --hover-color: #ffd97d;        /* Soft, cheerful yellow for subtle interactivity */
+  --text-color: #2f4858;         /* Dark slate blue-gray for readability and softness */
+  --heading-color: #00a7a7;      /* Matching primary color to unify the theme */
 }
 
 /* Base styles */

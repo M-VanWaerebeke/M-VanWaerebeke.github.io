@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Martin Van Waerebeke - PhD Candidate in Machine Unlearning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Martin Van Waerebeke – PhD candidate at Inria Paris specializing in machine unlearning.">
   <link rel="stylesheet" type="text/css" href="/static/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +20,12 @@
     <section id="about">
       <div class="container">
         <div class="section-column">
-          <img src="/images/profile.jpg" alt="Cool pic of me." class="profile-image">
+          <img src="/images/profile.jpg" alt="Cool pic of me thinking of machine forgetting." class="profile-image">
         </div>
         <div class="section-column">
           <h1>Martin Van Waerebeke</h1>
           <h2>PhD Candidate in Machine (Un)Learning</h2>
-          <p>I am a PhD candidate specializing in <strong>Machine Unlearning</strong>, working in the <a href="https://www.di.ens.fr/argo/content/team.html" target="_blank"> ARGO team</a> at INRIA Paris. I am especially interested in the theoretical possibilities and limitations of machine unlearning. I am supervised by <a href="https://kscaman.github.io/" target="_blank">Kevin Scaman</a>, and co-supervised by <a href="https://marcolorenzi.github.io/" target="_blank">Marco Lorenzi</a> and <a href="https://www-sop.inria.fr/members/Giovanni.Neglia/" target="_blank">Giovanni Neglia</a>.</p>
+          <p>I am a PhD candidate specializing in <strong>Machine Unlearning</strong>, working in the <a href="https://www.di.ens.fr/argo/content/team.html" target="_blank"> ARGO team</a> at  <a href="https://www.inria.fr" target="_blank"> INRIA</a> Paris. I am especially interested in the theoretical possibilities and limitations of machine unlearning. I am supervised by <a href="https://kscaman.github.io/" target="_blank">Kevin Scaman</a>, and co-supervised by <a href="https://marcolorenzi.github.io/" target="_blank">Marco Lorenzi</a> and <a href="https://www-sop.inria.fr/members/Giovanni.Neglia/" target="_blank">Giovanni Neglia</a>.</p>
 
           <div class="social-links">
             <a href="https://scholar.google.com/citations?user=z_x087wAAAAJ&hl=en" target="_blank">Google Scholar</a>
@@ -69,14 +70,18 @@
             <h2>Popularising Science</h2>
             <div class="article-list">
               <div class="article-item">
-                <h3><a href="https://theconversation.com/apprendre-a-oublier-le-nouveau-defi-de-lintelligence-artificielle-237579" target="_blank">Apprendre à oublier : le nouveau défi de l'intelligence artificielle</a></h3>
-                <p class="venue">The Conversation, Sep 2024</p>
-                <p>A broad-public introduction to machine unlearning and its key concepts, co-authored with Marco Lorenzi.</p>
+                <a href="https://theconversation.com/apprendre-a-oublier-le-nouveau-defi-de-lintelligence-artificielle-237579" target="_blank">
+                  <h3>Apprendre à oublier : le nouveau défi de l'intelligence artificielle</h3>
+                  <p class="venue">The Conversation, Sep 2024</p>
+                  <p>A broad-public introduction to machine unlearning and its key concepts, co-authored with Marco Lorenzi.</p>
+                </a>
               </div>
               <div class="article-item">
-                <h3><a href="https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/quand-les-algorithmes-doivent-desapprendre_183596" target="_blank">Quand les algorithmes doivent désapprendre</a></h3>
-                <p class="venue">Sciences et Avenir, Feb 2025</p>
-                <p>An introduction to machine unlearning and its key role in the context of data privacy and AI ethics where I was interviewed by Arnaud Devillard.</p>
+                <a href="https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/quand-les-algorithmes-doivent-desapprendre_183596" target="_blank">
+                  <h3>Quand les algorithmes doivent désapprendre</h3>
+                  <p class="venue">Sciences et Avenir, Feb 2025</p>
+                  <p>An introduction to machine unlearning and its key role in the context of data privacy and AI ethics where I was interviewed by Arnaud Devillard.</p>
+                </a>
               </div>
             </div>
           </div>
@@ -151,8 +156,10 @@
           const pubElement = document.createElement('div');
           pubElement.className = 'publication-item';
           pubElement.innerHTML = `
-            <h3><a href="${pub.links.pdf}" target="_blank">${pub.title}</a></h3>
-            <p class="venue">${pub["short venue"]} ${pub.year}</p>
+            <a href="${pub.links.pdf}" target="_blank">
+              <h3>${pub.title}</h3>
+              <p class="venue">${pub["short venue"]} ${pub.year}</p>
+            </a>
           `;
           publicationsList.appendChild(pubElement);
         });

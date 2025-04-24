@@ -10,13 +10,14 @@
 }*/
 
 :root {
-  --primary-color: #07575b;
-  --secondary-color: #ffffff;
-  --accent-color: #66a5ad;
-  --hover-color: #a2d5c6;
-  --text-color: #333333;
-  --heading-color: #07575b;
+  --primary-color: #026873;      /* Rich, profound teal with depth */
+  --secondary-color: #ffffff;    /* Crisp white for clear contrast */
+  --accent-color: #c97c5d;       /* Earthy, warm terracotta for grounded energy */
+  --hover-color: #e8b298;        /* Soft earthy peach for subtle, inviting interactions */
+  --text-color: #2f4858;         /* Dark slate blue-gray maintaining readability */
+  --heading-color: #026873;      /* Matching deep teal to unify theme */
 }
+
 * {
   transition: all .3s ease;
   scroll-behavior: smooth;
@@ -123,8 +124,9 @@ td, th {
 header {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding: 20px 20px;
+  padding: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .profile-photo {
@@ -157,9 +159,9 @@ header h2 {
 
 nav {
   background-color: var(--primary-color);
-  padding: 10px 0;
+  padding: 0;
   box-shadow: none;
-  border-bottom: 4px solid var(--primary-color);
+  border-bottom: none;
   width: 100%;
 }
 
@@ -175,7 +177,7 @@ nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 15px 20px;
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -206,11 +208,12 @@ section {
 }
 
 section h2 {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 24px;
-  margin-top: 15px;
-  padding-top: 15px;
-  color: var(--heading-color);
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 40px 0 30px 0;
+  letter-spacing: 0.5px;
 }
 
 section h3 {
@@ -304,8 +307,8 @@ footer p {
 }
 
 #about h2 {
-  font-size: 1.3em;
-  margin: 0 0 12px 0;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.5em;
 }
 
 #about p {
@@ -515,7 +518,7 @@ nav .button {
   margin-top: 20px;
 }
 
-.publication-item, .article-item, .teaching-item {
+.publication-item, .article-item {
   margin-bottom: 20px;
   padding: 25px;
   background-color: #f9f9f9;
@@ -524,37 +527,43 @@ nav .button {
   transition: all 0.2s ease;
   cursor: pointer;
   border-left: 4px solid var(--accent-color);
+  position: relative;
 }
 
-.publication-item:hover, .article-item:hover, .teaching-item:hover {
+.publication-item a, .article-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.publication-item:hover, .article-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   background-color: #f5f5f5;
+  border-left: 4px solid var(--hover-color);
 }
 
-.publication-item h3 a, .article-item h3 a {
+.publication-item h2, .talk-item h2, .contact-method h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.publication-item h3, .article-item h3 {
   color: var(--heading-color);
-  text-decoration: underline;
-  display: block;
+  margin: 0 0 15px 0;
 }
 
-.publication-item h3 a:hover, .article-item h3 a:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-
-.publication-item .authors {
-  color: var(--text-color);
-  margin-bottom: 15px;
+.publication-item:hover h3, .article-item:hover h3 {
+  color: var(--hover-color);
 }
 
 .publication-item .venue, .article-item .venue {
   font-style: italic;
   color: var(--accent-color);
+  margin: 0 0 15px 0;
 }
 
 .publication-item p, .article-item p {
-  margin: 0 0 15px 0;
+  margin: 0;
   line-height: 1.6;
 }
 
@@ -801,33 +810,28 @@ nav .button {
 }
 
 .teaching-list {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  margin-top: 30px;
 }
 
 .teaching-item {
+  margin-bottom: 40px;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.teaching-item:hover {
-  transform: translateY(-2px);
 }
 
 .teaching-item h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.1em;
+  margin-top: 0;
   color: var(--heading-color);
+  font-size: 1.2em;
 }
 
 .teaching-item .venue {
   color: var(--accent-color);
   font-size: 0.9em;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
+  font-style: italic;
 }
 
 .teaching-item .venue a {
@@ -840,9 +844,7 @@ nav .button {
 }
 
 .teaching-item .details {
-  margin: 0;
-  font-size: 0.95em;
-  line-height: 1.5;
+  margin-top: 10px;
   color: var(--text-color);
 }
 
@@ -850,4 +852,31 @@ nav .button {
   .teaching-item {
     padding: 15px;
   }
+}
+
+/* Make h1 larger on non-index pages */
+body:not(#index) h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.publication-item h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.publication-links .button {
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.publication-links .button:hover {
+  background-color: var(--hover-color);
+  color: white;
 }
