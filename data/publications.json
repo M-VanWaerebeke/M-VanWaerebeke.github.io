@@ -3,8 +3,8 @@
     {
       "title": "When to Forget? Complexity Trade-offs in Machine Unlearning",
       "authors": "Martin Van Waerebeke, Marco Lorenzi, Giovanni Neglia, Kevin Scaman",
-      "venue": "arXiv preprint arXiv:2502.17323",
-      "short venue": "arXiv (submitted to ICML)",
+      "venue": "International Conference on Machine Learning ",
+      "short venue": "ICML",
       "year": "2025",
       "abstract": "Can unlearning be done efficiently? Sometimes! We identify three efficiency regimes for first-order unlearning algorithms, analyzing how their speeds compare to retraining depending on the fraction of data to forget, privacy constraints, and allowed errors.",
       "links": {

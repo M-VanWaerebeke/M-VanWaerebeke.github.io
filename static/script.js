@@ -118,3 +118,36 @@ function addPublicationRequest(urlData, jsonRequest, id, keys, builderRequest) {
       document.getElementById(id).innerHTML = component;
     })
 }
+
+/* ─────────────────────────  TALKS LIST  ───────────────────────── */
+
+async function loadRecentTalks() {
+  try {
+    const response = await fetch('/data/talks.json');
+    const data = await response.json();
+    const talksList = document.getElementById('recent-talks-list');
+    
+    // Get only the 3 most recent talks
+    const recentTalks = data.talks.slice(0, 3);
+    
+    recentTalks.forEach(talk => {
+      const talkDate = new Date(talk.date);
+      const isUpcoming = talkDate > new Date();
+      
+      const talkElement = document.createElement('div');
+      talkElement.className = 'talk-item';
+      talkElement.innerHTML = `
+        <h3>${talk.title}${isUpcoming ? '<span class="upcoming-badge">Upcoming!</span>' : ''}</h3>
+        <p class="venue">${talk.venue}, ${talk.date}</p>
+      `;
+      talksList.appendChild(talkElement);
+    });
+  } catch (error) {
+    console.error('Error loading talks:', error);
+    document.getElementById('recent-talks-list').innerHTML = 
+      '<p>Error loading talks. Please try again later.</p>';
+  }
+}
+
+/* Run it as soon as the page is ready */
+document.addEventListener('DOMContentLoaded', loadRecentTalks);

@@ -1,6 +1,28 @@
 {
   "talks": [
     {
+      "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
+      "venue": "Presentation at EUROPT 2025",
+      "date": "1 July 2025",
+      "location": "Southampton, UK",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
+      "venue": "PREMEDICAL Team Seminar",
+      "date": "12 June 2025",
+      "location": "Montpellier, France",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
       "title": "Research teaser for 'When to Forget?'",
       "venue": "FedMalin Retreat",
       "date": "26 Nov 2024",
