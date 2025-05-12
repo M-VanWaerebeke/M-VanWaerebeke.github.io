@@ -1,5 +1,17 @@
 {
+  
   "talks": [
+    {
+      "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
+      "venue": "Nicolas Papernot's reading group",
+      "date": "21 July 2025",
+      "location": "Toronto, CA",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
     {
       "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
       "venue": "Presentation at EUROPT 2025",

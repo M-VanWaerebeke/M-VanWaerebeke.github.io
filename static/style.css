@@ -624,6 +624,11 @@ nav .button {
   gap: 8px;
 }
 
+.talk-item h2 span {
+  display: block;
+  width: 100%;
+}
+
 .upcoming-badge {
   background-color: var(--accent-color);
   color: white;
@@ -632,12 +637,13 @@ nav .button {
   font-size: 0.8em;
   font-weight: 600;
   animation: pulse 2s infinite;
-  display: inline-block;
+  display: block;
   width: fit-content;
   cursor: default;
   text-decoration: none;
   border: none;
   box-shadow: none;
+  margin-top: 4px;
 }
 
 .upcoming-badge:hover {
