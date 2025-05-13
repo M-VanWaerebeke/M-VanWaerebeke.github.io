@@ -127,8 +127,11 @@ async function loadRecentTalks() {
     const data = await response.json();
     const talksList = document.getElementById('recent-talks-list');
     
+    // Sort talks by date in descending order (most recent first)
+    const sortedTalks = data.talks.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
     // Get only the 3 most recent talks
-    const recentTalks = data.talks.slice(0, 3);
+    const recentTalks = sortedTalks.slice(0, 3);
     
     recentTalks.forEach(talk => {
       const talkDate = new Date(talk.date);
@@ -148,6 +151,3 @@ async function loadRecentTalks() {
       '<p>Error loading talks. Please try again later.</p>';
   }
 }
-
-/* Run it as soon as the page is ready */
-document.addEventListener('DOMContentLoaded', loadRecentTalks);

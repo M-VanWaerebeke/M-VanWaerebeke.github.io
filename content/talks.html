@@ -33,10 +33,16 @@
         const talksList = document.getElementById('talks-list');
         
         data.talks.forEach(talk => {
+          const talkDate = new Date(talk.date);
+          const isUpcoming = talkDate > new Date();
+          
           const talkElement = document.createElement('div');
           talkElement.className = 'talk-item';
           talkElement.innerHTML = `
-            <h2>${talk.venue}</h2>
+            <h2>
+              ${talk.venue}
+              ${isUpcoming ? '<span class="upcoming-badge">Upcoming!</span>' : ''}
+            </h2>
             <div class="talk-meta">
               <span class="title">${talk.title}</span>
               <span class="date">${talk.date}</span>
