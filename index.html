@@ -195,7 +195,7 @@
           const talkElement = document.createElement('div');
           talkElement.className = 'talk-item';
           talkElement.innerHTML = `
-            <h3>${talk.venue}${isUpcoming ? '<span class="upcoming-badge">Upcoming!</span>' : ''}</h3>
+            <h3>${talk.venue}${isUpcoming ? '<span class="upcoming-badge">Upcoming!</span>' : ''}${talk.award ? `<span class="award-badge">${talk.award}</span>` : ''}</h3>
             <p class="venue">${talk.title}, ${talk.date}</p>
           `;
           talksList.appendChild(talkElement);

@@ -42,6 +42,7 @@
             <h2>
               ${talk.venue}
               ${isUpcoming ? '<span class="upcoming-badge">Upcoming!</span>' : ''}
+              ${talk.award ? `<span class="award-badge">${talk.award}</span>` : ''}
             </h2>
             <div class="talk-meta">
               <span class="title">${talk.title}</span>

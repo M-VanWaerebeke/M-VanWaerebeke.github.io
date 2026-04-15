@@ -629,6 +629,22 @@ nav .button {
   width: 100%;
 }
 
+.award-badge {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 600;
+  display: block;
+  width: fit-content;
+  cursor: default;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  margin-top: 4px;
+}
+
 .upcoming-badge {
   background-color: var(--accent-color);
   color: white;

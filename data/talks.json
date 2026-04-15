@@ -3,10 +3,22 @@
   "talks": [
     {
       "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
-      "venue": "Centre Bernoulli Seminar, ENS Paris-Saclay (Invited Talk)",
+      "venue": "Centre Bernoulli Seminar, ENS Paris-Saclay",
       "date": "10 Feb 2026",
       "location": "ENS Paris-Saclay, France",
-      "type": "Invited Talk",
+      "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "When to Forget? Complexity Bounds in Machine Unlearning",
+      "venue": "Recent Advances in ML — Aussois Autumn School",
+      "date": "27 Nov 2025",
+      "location": "Aussois, France",
+      "type": "Contributed Talk",
+      "award": "Best Contributed Talk Award",
       "links": {
         "slides": "#",
         "video": "#"
@@ -14,7 +26,7 @@
     },
     {
       "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
-      "venue": "Nicolas Papernot's reading group",
+      "venue": "Nicolas Papernot's reading group, Vector Institute",
       "date": "21 July 2025",
       "location": "Toronto, CA",
       "type": "Research Talk",
@@ -25,7 +37,7 @@
     },
     {
       "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
-      "venue": "Presentation at EUROPT 2025",
+      "venue": "Presentation at EUROPT 2025, Invited Talk",
       "date": "1 July 2025",
       "location": "Southampton, UK",
       "type": "Research Talk",
@@ -36,7 +48,7 @@
     },
     {
       "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
-      "venue": "PREMEDICAL Team Seminar",
+      "venue": "PREMEDICAL Team Seminar, INRIA Montpellier",
       "date": "12 June 2025",
       "location": "Montpellier, France",
       "type": "Research Talk",
@@ -51,17 +63,6 @@
       "date": "26 Nov 2024",
       "location": "Lyon, France",
       "type": "Research Talk",
-      "links": {
-        "slides": "#",
-        "video": "#"
-      }
-    },
-    {
-      "title": "When to Forget? Complexity Bounds in Machine Unlearning",
-      "venue": "Recent Advances in ML — Aussois Autumn School (Best Contributed Talk)",
-      "date": "1 Oct 2024",
-      "location": "Aussois, France",
-      "type": "Contributed Talk",
       "links": {
         "slides": "#",
         "video": "#"
