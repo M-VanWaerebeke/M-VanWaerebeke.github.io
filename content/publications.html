@@ -39,7 +39,7 @@
           pubElement.className = 'publication-item';
           pubElement.innerHTML = `
             <h2>${pub.title}</h2>
-            <p class="authors">${pub.authors}</p>
+            <p class="authors">${pub.authors.replace(/Martin Van Waerebeke\*?/g, '<span class="me">$&</span>')}</p>
             <p class="venue">${pub.venue}, ${pub.year}</p>
             <div class="publication-links">
               ${pub.links.pdf ? `<a href="${pub.links.pdf}" class="button">PDF</a>` : ''}

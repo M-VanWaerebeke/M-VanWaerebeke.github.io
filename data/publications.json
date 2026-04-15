@@ -1,6 +1,18 @@
 {
   "publications": [
     {
+      "title": "Variance-Reduced (ε,δ)-Unlearning using Forget Set Gradients",
+      "authors": "Martin Van Waerebeke, Marco Lorenzi, Kevin Scaman, El Mahdi El Mhamdi, Giovanni Neglia",
+      "venue": "International Conference on Machine Learning",
+      "short venue": "ICML (Submitted)",
+      "year": "2026",
+      "abstract": "We introduce VRU (Variance-Reduced Unlearning), the first first-order (ε,δ)-unlearning algorithm that directly incorporates forget set gradients into its update rule. VRU achieves an O(1/e) dependence on the target excess risk, improving upon the O(1/e²) scaling of prior certified methods. We prove that VRU asymptotically outperforms any first-order (ε,δ)-unlearning method that does not access the forget set, and validate these results experimentally.",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2602.14938",
+        "code": "#"
+      }
+    },
+    {
       "title": "When to Forget? Complexity Trade-offs in Machine Unlearning",
       "authors": "Martin Van Waerebeke, Marco Lorenzi, Giovanni Neglia, Kevin Scaman",
       "venue": "International Conference on Machine Learning ",
@@ -14,7 +26,7 @@
     },
     {
       "title": "SIFU: Sequential Informed Federated Unlearning for efficient and provable client unlearning in federated optimization",
-      "authors": "Yann Fraboni*, Martin Van Waerebeke*, Kevin Scaman, Richard Vidal, Laetitia Kameni, Marco Lorenzi",
+      "authors": "Yann Fraboni*, Martin Van Waerebeke*, Richard Vidal, Laetitia Kameni, Kevin Scaman, Marco Lorenzi",
       "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
       "short venue": "AISTATS",
       "year": "2024",

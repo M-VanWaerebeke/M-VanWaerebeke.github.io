@@ -33,8 +33,12 @@ div.ZoneTitreResultat
   font-weight:bold;
 	color: var(--accent-color);
 }
-/* classe pour les auteurs */ 
+/* classe pour les auteurs */
 .Auteurs {
+}
+/* highlight own name in author lists */
+.me {
+  font-weight: 600;
 }
 /* classe des dÃ©tails de publication : une calsse par type */ 
 .detail_revue,.detail_conf,.detail_cours,.detail_ouv,.detail_hdr,.detail_these,.detail_autre,.detail_brevet,.detail_rapport,.detail_sans_ref{

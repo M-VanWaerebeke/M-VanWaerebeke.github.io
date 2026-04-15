@@ -1,6 +1,17 @@
 {
-  
+
   "talks": [
+    {
+      "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
+      "venue": "Centre Bernoulli Seminar, ENS Paris-Saclay (Invited Talk)",
+      "date": "10 Feb 2026",
+      "location": "ENS Paris-Saclay, France",
+      "type": "Invited Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
     {
       "title": "When to Forget ? Complexity Trade-offs in Machine Unlearning",
       "venue": "Nicolas Papernot's reading group",
@@ -40,6 +51,17 @@
       "date": "26 Nov 2024",
       "location": "Lyon, France",
       "type": "Research Talk",
+      "links": {
+        "slides": "#",
+        "video": "#"
+      }
+    },
+    {
+      "title": "When to Forget? Complexity Bounds in Machine Unlearning",
+      "venue": "Recent Advances in ML — Aussois Autumn School (Best Contributed Talk)",
+      "date": "1 Oct 2024",
+      "location": "Aussois, France",
+      "type": "Contributed Talk",
       "links": {
         "slides": "#",
         "video": "#"
