@@ -8,7 +8,7 @@ class HeaderComponent extends HTMLElement {
               <li><a href="/">Home</a></li>
               <li><a href="/content/talks.html">Talks</a></li>
               <li><a href="/content/publications.html">Publications</a></li>
-              <li><a href="/files/resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="/files/Martin-Van_Waerebeke_resume.pdf" target="_blank">Resume</a></li>
               <li><a href="/content/contact.html">Contact</a></li>
             </ul>
           </div>
