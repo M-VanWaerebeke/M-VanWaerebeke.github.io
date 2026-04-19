@@ -24,10 +24,20 @@ class FooterComponent extends HTMLElement {
       <footer>
         <div class="container">
           <p>&copy; ${new Date().getFullYear()} Martin Van Waerebeke. All rights reserved.</p>
-          <p>Last updated: ${new Date().toLocaleDateString()}</p>
+          <p>Last updated: <span id="last-updated-date">...</span></p>
         </div>
       </footer>
     `;
+
+    fetch('https://api.github.com/repos/M-VanWaerebeke/M-VanWaerebeke.github.io/commits/main')
+      .then(r => r.json())
+      .then(data => {
+        const date = new Date(data.commit.committer.date);
+        document.getElementById('last-updated-date').textContent = date.toLocaleDateString();
+      })
+      .catch(() => {
+        document.getElementById('last-updated-date').textContent = 'unknown';
+      });
   }
 }
 
