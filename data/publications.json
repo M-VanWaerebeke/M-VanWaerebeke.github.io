@@ -4,7 +4,7 @@
       "title": "Variance-Reduced (ε,δ)-Unlearning using Forget Set Gradients",
       "authors": "Martin Van Waerebeke, Marco Lorenzi, Kevin Scaman, El Mahdi El Mhamdi, Giovanni Neglia",
       "venue": "International Conference on Machine Learning",
-      "short venue": "ICML (Submitted)",
+      "short venue": "ICML",
       "year": "2026",
       "abstract": "We introduce VRU (Variance-Reduced Unlearning), the first first-order (ε,δ)-unlearning algorithm that directly incorporates forget set gradients into its update rule. VRU achieves an O(1/e) dependence on the target excess risk, improving upon the O(1/e²) scaling of prior certified methods. We prove that VRU asymptotically outperforms any first-order (ε,δ)-unlearning method that does not access the forget set, and validate these results experimentally.",
       "links": {
