@@ -32,7 +32,7 @@
             <a href="https://www.linkedin.com/in/martin-van-waerebeke/" target="_blank">LinkedIn</a>
             <a href="https://github.com/M-VanWaerebeke" target="_blank" rel="noopener noreferrer">GitHub</a>
 
-            <a href="/files/Martin-Van_Waerebeke_resume.pdf" target="_blank" class="button">CV</a>
+            <a href="/files/Martin_Van-Waerebeke_resume.pdf" target="_blank" class="button">CV</a>
             <button class="button email-button" onclick="copyEmail()">Copy Email</button>
           </div>
         </div>
@@ -64,9 +64,30 @@
             </div>
           </div>
         </section>
+
+        <section id="contact-summary">
+          <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+              <p>I'm always interested in discussing research opportunities, collaborations, or answering questions about my work in Machine Unlearning.</p>
+            </div>
+            <div class="view-more">
+              <a href="/content/contact.html" class="button">View Full Contact Info</a>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="column">
+        <section id="current-visit" hidden>
+          <div class="container">
+            <div class="article-item visit-item">
+              <h3>Current research visit:</h3>
+              <p><a href="https://cispa.de/en" target="_blank" rel="noopener noreferrer">CISPA Helmholtz Center for Information Security</a>, Saarbrücken, Germany</p>
+            </div>
+          </div>
+        </section>
+
         <section id="popularising-science">
           <div class="container">
             <h2>Popularising Science</h2>
@@ -117,18 +138,6 @@
             </div>
           </div>
         </section>
-
-        <section id="contact-summary">
-          <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-info">
-              <p>I'm always interested in discussing research opportunities, collaborations, or answering questions about my work in Machine Unlearning.</p>
-            </div>
-            <div class="view-more">
-              <a href="/content/contact.html" class="button">View Full Contact Info</a>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   </main>
@@ -167,7 +176,6 @@
               <h3>${pub.title}</h3>
               <p class="venue">${pub["short venue"]} ${pub.year}</p>
             </a>
-            ${pub.links.code && pub.links.code !== '#' ? `<p><a href="${pub.links.code}" target="_blank" rel="noopener noreferrer">Code</a></p>` : ''}
           `;
           publicationsList.appendChild(pubElement);
         });
@@ -209,6 +217,13 @@
           '<p>Error loading talks. Please try again later.</p>';
       }
     }
+
+    // Show the research-visit banner until the end of 10 December 2026
+    document.addEventListener('DOMContentLoaded', () => {
+      if (new Date() < new Date(2026, 11, 11)) {
+        document.getElementById('current-visit').hidden = false;
+      }
+    });
 
     // Load recent publications and talks when the page loads
     document.addEventListener('DOMContentLoaded', () => {

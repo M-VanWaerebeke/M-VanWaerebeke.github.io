@@ -1002,3 +1002,16 @@ body:not(#index) h1 {
   background-color: var(--hover-color);
   color: white;
 }
+
+/* Current research visit banner (home page) */
+#current-visit[hidden] {
+  display: none;
+}
+
+#current-visit .visit-item {
+  cursor: default;
+}
+
+#current-visit .visit-item h3 {
+  margin: 0 0 8px 0;
+}
