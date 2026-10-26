@@ -30,6 +30,7 @@
           <div class="social-links">
             <a href="https://scholar.google.com/citations?user=z_x087wAAAAJ&hl=en" target="_blank">Google Scholar</a>
             <a href="https://www.linkedin.com/in/martin-van-waerebeke/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/M-VanWaerebeke" target="_blank" rel="noopener noreferrer">GitHub</a>
 
             <a href="/files/Martin-Van_Waerebeke_resume.pdf" target="_blank" class="button">CV</a>
             <button class="button email-button" onclick="copyEmail()">Copy Email</button>
@@ -166,6 +167,7 @@
               <h3>${pub.title}</h3>
               <p class="venue">${pub["short venue"]} ${pub.year}</p>
             </a>
+            ${pub.links.code && pub.links.code !== '#' ? `<p><a href="${pub.links.code}" target="_blank" rel="noopener noreferrer">Code</a></p>` : ''}
           `;
           publicationsList.appendChild(pubElement);
         });

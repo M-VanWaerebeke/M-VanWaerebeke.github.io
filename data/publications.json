@@ -26,14 +26,14 @@
     },
     {
       "title": "SIFU: Sequential Informed Federated Unlearning for efficient and provable client unlearning in federated optimization",
-      "authors": "Yann Fraboni*, Martin Van Waerebeke*, Richard Vidal, Laetitia Kameni, Kevin Scaman, Marco Lorenzi",
+      "authors": "Yann Fraboni*, Martin Van Waerebeke*, Kevin Scaman, Richard Vidal, Laetitia Kameni, Marco Lorenzi",
       "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
       "short venue": "AISTATS",
       "year": "2024",
       "abstract": "We propose an algorithm for provable unlearning in federated learning, using differential privacy-based guarantees. The algorithm can deal with non-convex loss functions and has improved performances for convex and strongly convex losses.",
       "links": {
         "pdf": "https://arxiv.org/abs/2211.11656",
-        "code": "https://github.com/Accenture/Labs-Federated-Learning/tree/SIFU"
+        "code": "https://github.com/M-VanWaerebeke/SIFU-AISTATS2024/tree/SIFU"
       }
     },
     {
@@ -57,8 +57,8 @@
       "abstract": "Entropy of predictions over several perturbed inferences is a popular uncertainty measure for self-supervised segmentation. We show that is has important flaws in multi-class settings and propose better-performing alternatives.",
       "links": {
         "pdf": "https://arxiv.org/pdf/2203.03587v1",
-        "code": "#"
+        "code": "https://github.com/M-VanWaerebeke/Bhatta_UAMT"
       }
     }
   ]
-} 
+}
