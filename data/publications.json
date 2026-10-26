@@ -21,7 +21,7 @@
       "abstract": "Can unlearning be done efficiently? Sometimes! We identify three efficiency regimes for first-order unlearning algorithms, analyzing how their speeds compare to retraining depending on the fraction of data to forget, privacy constraints, and allowed errors.",
       "links": {
         "pdf": "https://arxiv.org/abs/2502.17323",
-        "code": "https://github.com/M-VanWaerebeke/when-to-forget"
+        "code": "#"
       }
     },
     {
