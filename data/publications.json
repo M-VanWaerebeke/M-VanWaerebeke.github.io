@@ -9,7 +9,7 @@
       "abstract": "We introduce VRU (Variance-Reduced Unlearning), the first first-order (ε,δ)-unlearning algorithm that directly incorporates forget set gradients into its update rule. VRU achieves an O(1/e) dependence on the target excess risk, improving upon the O(1/e²) scaling of prior certified methods. We prove that VRU asymptotically outperforms any first-order (ε,δ)-unlearning method that does not access the forget set, and validate these results experimentally.",
       "links": {
         "pdf": "https://arxiv.org/abs/2602.14938",
-        "code": "#"
+        "code": "https://github.com/M-VanWaerebeke/variance-reduced-unlearning"
       }
     },
     {
@@ -21,7 +21,7 @@
       "abstract": "Can unlearning be done efficiently? Sometimes! We identify three efficiency regimes for first-order unlearning algorithms, analyzing how their speeds compare to retraining depending on the fraction of data to forget, privacy constraints, and allowed errors.",
       "links": {
         "pdf": "https://arxiv.org/abs/2502.17323",
-        "code": "#"
+        "code": "https://github.com/M-VanWaerebeke/when-to-forget"
       }
     },
     {
